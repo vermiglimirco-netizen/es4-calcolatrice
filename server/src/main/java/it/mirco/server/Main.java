@@ -12,8 +12,9 @@ public class Main {
 
         // il server apre la porta 5000 
         // il try chiude da solo il Socket alla fine
-        try (ServerSocket server = new ServerSocket(5000)) {
-
+        try (ServerSocket server = new ServerSocket(5000)) 
+        {
+            System.out.println("Server in ascolto sulla porta 5000...");
             // ciclo infinito: finito un client, il server ne aspetta un altro
             while (true) 
             {
@@ -24,7 +25,7 @@ public class Main {
                     // apre il canale per leggere
 
                     PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-                    // creo il canale di uscita 
+                    // creo il canale di uscita                     
 
                     String richiesta = in.readLine();
                     // legge dal canale
