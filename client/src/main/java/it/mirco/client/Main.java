@@ -64,6 +64,9 @@ public class Main {
             e.printStackTrace();
         }
         
+        
+        
+        
         tastiera.close();
 
     }

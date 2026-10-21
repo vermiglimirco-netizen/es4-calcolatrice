@@ -21,6 +21,7 @@ public class Main {
             {
                 //il server aspetta un client
                 Socket clientsocket = serversocket.accept();
+                //stampa l'ip e socket
                 System.out.println("nuovo client connesso: "+clientsocket.getInetAddress().getHostAddress());
 
                 //si apre un nuovo thread sulla clientsocket
